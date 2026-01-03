@@ -14,5 +14,24 @@
 	},
 	"dependencies": {
 		"s3broker": "^0.6.1"
+	},
+	"cloudflare": {
+		"bindings": {
+			"UPSTREAM_ENDPOINT": {
+				"description": "The S3-compatible endpoint URL to proxy (e.g., `https://s3.us-west-2.amazonaws.com` or `https://<account-id>.r2.cloudflarestorage.com`)"
+			},
+			"UPSTREAM_ACCESS_KEY_ID": {
+				"description": "Access Key ID for authenticating with your upstream S3-compatible storage"
+			},
+			"UPSTREAM_SECRET_ACCESS_KEY": {
+				"description": "Secret Access Key for authenticating with your upstream S3-compatible storage"
+			},
+			"CLIENT_ACCESS_KEY_ID": {
+				"description": "Access Key ID that clients will use to authenticate with this proxy. Generate a secure random value using `openssl rand -hex 20`"
+			},
+			"CLIENT_SECRET_ACCESS_KEY": {
+				"description": "Secret Access Key that clients will use to authenticate with this proxy. Generate a secure random value using `openssl rand -hex 32`"
+			}
+		}
 	}
 }
