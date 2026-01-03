@@ -18,7 +18,7 @@
 	"cloudflare": {
 		"bindings": {
 			"UPSTREAM_ENDPOINT": {
-				"description": "The S3-compatible endpoint URL to proxy (e.g., `https://s3.us-west-2.amazonaws.com` or `https://<account-id>.r2.cloudflarestorage.com`)"
+				"description": "The S3-compatible endpoint URL to proxy (e.g., `https://s3.us-west-2.amazonaws.com` or `https://your-account-id.r2.cloudflarestorage.com`)"
 			},
 			"UPSTREAM_ACCESS_KEY_ID": {
 				"description": "Access Key ID for authenticating with your upstream S3-compatible storage"
